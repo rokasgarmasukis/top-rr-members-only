@@ -1,0 +1,1 @@
+Project for The Odin Project Ruby on Rails course.
