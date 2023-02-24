@@ -1,0 +1,12 @@
+<% if user_signed_in? %>
+  <% @posts.each do |post| %>
+    <h2><%= post.title %></h2>
+    <p><%= post.body %></p>
+    <p>Author: <%= post.user.id %></p>
+  <% end %>
+<% else %>
+  <% @posts.each do |post| %>
+    <h2><%= post.title %></h2>
+    <p><%= post.body %></p>
+  <% end %>
+<% end %>
